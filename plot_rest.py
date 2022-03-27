@@ -1,37 +1,3 @@
-import matplotlib.pyplot as plt
-import numpy as np
-
-lines = []
-
-with open('survey_results.csv', 'r') as file:
-  lines = file.readlines()
-  lines = [line.strip().split(',') for line in lines]
-
-# people age distribution
-# ages = [line[0] for line in lines]
-# lb1, lb2, lb3, lb4, lb5 = '10 - 20 anos', '21 - 30 anos', '31 - 40 anos', '41 - 50 anos', 'Mais de 50'
-# age1, age2, age3, age4, age5 = ages.count(lb1), ages.count(lb2), ages.count(lb3), ages.count(lb4), ages.count(lb5)
-
-# labels = [lb1, lb2, lb3, lb4, lb5]
-# data = [age1, age2, age3, age4, age5]
-
-# fig1, ax1 = plt.subplots(figsize=(6, 6), subplot_kw=dict(aspect="equal"))
-
-# def func(pct):    
-#     return "{:.1f}%".format(pct)
-
-
-# wedges, texts, autotexts = ax1.pie(data, autopct=lambda pct: func(pct), pctdistance= 0.5, startangle=90, rotatelabels=True,
-#                                     textprops=dict(color="w"))
-
-# for txt, pct_text in zip(texts, autotexts):
-#     pct_text.set_rotation(txt.get_rotation())
-
-# ax1.legend(wedges, labels, title='Idades por intervalos', loc='center left', bbox_to_anchor=(1, 0, 0.5, 1))
-
-# plt.setp(autotexts, size=8, weight='bold')
-# plt.show()
-
 # social network analysis distribution
 # social_networks = [line[1] for line in lines]
 
